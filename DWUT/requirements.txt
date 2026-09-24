@@ -1,0 +1,29 @@
+# DMURT — Darko's Multi-Utility Repair Tool
+# Python 3.10+ required (Windows only)
+
+# UI
+customtkinter>=5.2.0
+Pillow>=10.0.0
+
+# System monitoring
+psutil>=5.9.0
+
+# Windows APIs (process priority, registry etc.)
+pywin32>=306
+
+# Memory access (FPS unlocker)
+pymem>=1.12.0
+
+# Proxy fetching and checking
+requests>=2.31.0
+
+# GPU stats — Win32_VideoController for name, GPU Engine perf counters
+# for live usage on any vendor (NVIDIA/AMD/Intel), OHM sensors as a
+# fallback if OpenHardwareMonitor happens to be running
+wmi>=1.5.1
+
+# GPU stats — best-quality usage/temp/VRAM readout on NVIDIA cards specifically.
+# nvidia-ml-py (NOT the old standalone "pynvml" PyPI package, which is
+# deprecated and prints a FutureWarning on every import) — it's the
+# official successor and installs to the same `import pynvml` namespace.
+nvidia-ml-py>=12.535.0
